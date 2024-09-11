@@ -11,8 +11,10 @@ This project focuses on predicting sales prices for various products across diff
 ### Key Insights:
 - **Highest Sales at the Oldest Outlet**: The oldest store, in terms of construction year, shows the highest sales, while other stores, despite differences in construction years, exhibit relatively similar sales.
 - ![highest_sale_outlet](https://github.com/user-attachments/assets/7706198a-1464-4fe9-875c-fea38de8bdcf)
+- ![outlit_type](https://github.com/user-attachments/assets/a1fc5168-ca98-49ae-bedd-2f50d3869fbc)
 
 - **Strong Correlation**: A moderate positive correlation was found between the product's MRP (Maximum Retail Price) and its sales, indicating that higher-priced products tend to generate more sales.
 
 This project showcases the process of understanding and predicting sales using a combination of data science techniques, and the results can be valuable for optimizing business decisions in retail.
 - ![corr_heatmap](https://github.com/user-attachments/assets/c90d74a0-8a45-413c-8551-dca003fbe303)
+
