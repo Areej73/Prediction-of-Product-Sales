@@ -1,4 +1,5 @@
 # Prediction of Product Sales
+![Prediction of Product Sales](your-image-url)![prediction of product sales](https://github.com/user-attachments/assets/7ea57af2-761f-4779-818b-607ca554ccca)
 
 This repository contains a project focused on predicting sales for various products sold across multiple outlets. The goal is to analyze historical sales data and apply machine learning techniques to forecast future sales. This project demonstrates a range of data analysis, feature engineering, and modeling techniques in Python, from exploratory data analysis (EDA) to model building.
 
@@ -17,6 +18,7 @@ The project is structured in several parts:
 ## Data
 
 The dataset used in this project contains the following key features:
+![prediction of product sales](https://github.com/user-attachments/assets/da339dba-5f81-4a12-b70c-37c64e77b920)
 
 - `Item_Identifier`: Unique product code.
 - `Item_Weight`: Weight of the product.
