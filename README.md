@@ -18,7 +18,6 @@ The project is structured in several parts:
 ## Data
 
 The dataset used in this project contains the following key features:
-![prediction of product sales](https://github.com/user-attachments/assets/da339dba-5f81-4a12-b70c-37c64e77b920)
 
 - `Item_Identifier`: Unique product code.
 - `Item_Weight`: Weight of the product.
