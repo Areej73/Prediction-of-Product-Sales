@@ -1,21 +1,86 @@
-# Project_1 (Sales Prediction Project)
-## Introduction : 
-This project focuses on predicting sales prices for various products across different retail outlets. The goal is to analyze and model the factors that influence sales, such as product characteristics, outlet features, and pricing. By leveraging data visualization and machine learning techniques, we aim to build a predictive model that accurately forecasts sales, helping businesses optimize their pricing strategies and inventory management.
+# Prediction of Product Sales
 
-### Project Objectives:
-1. **Data Exploration**: Analyze the dataset to understand the distribution of sales across products and outlets.
-2. **Data Visualization**: Create exploratory visuals, including histograms, boxplots, countplots, and heatmaps, to uncover patterns and correlations within the data.
-3. **Modeling**: Develop predictive models to estimate sales prices based on the available features.
-4. **Evaluation**: Assess the model's performance using appropriate metrics to ensure accurate predictions.
+This repository contains a project focused on predicting sales for various products sold across multiple outlets. The goal is to analyze historical sales data and apply machine learning techniques to forecast future sales. This project demonstrates a range of data analysis, feature engineering, and modeling techniques in Python, from exploratory data analysis (EDA) to model building.
 
-### Key Insights:
-- **Highest Sales at the Oldest Outlet**: One of the oldest stores, in terms of construction year, shows the highest sales,however the other shows the lowest sales  while other stores, despite differences in construction years, exhibit relatively similar sales.
-- ![highest_sale_outlet](https://github.com/user-attachments/assets/7706198a-1464-4fe9-875c-fea38de8bdcf)
-- - **Sales according to Outlit type**: Obviuously Groceries have the least sales which explains the Sales gap between the oldest stores among the other outlits 
-- ![outlit_type](https://github.com/user-attachments/assets/a1fc5168-ca98-49ae-bedd-2f50d3869fbc)
+## Project Overview
 
-- **Strong Correlation**: A moderate positive correlation was found between the product's MRP (Maximum Retail Price) and its sales, indicating that higher-priced products tend to generate more sales.
+This project aims to explore, analyze, and predict product sales based on a dataset consisting of different product features and outlet attributes. The dataset includes information on item type, weight, visibility, outlet size, and other key characteristics that might influence sales.
 
-This project showcases the process of understanding and predicting sales using a combination of data science techniques, and the results can be valuable for optimizing business decisions in retail.
-- ![corr_heatmap](https://github.com/user-attachments/assets/c90d74a0-8a45-413c-8551-dca003fbe303)
+The project is structured in several parts:
+
+1. **Data Cleaning and Preprocessing**: Handling missing values, outliers, and incorrect data entries.
+2. **Exploratory Data Analysis (EDA)**: Visualizing key trends and relationships between variables.
+3. **Feature Engineering**: Creating and modifying features to improve model performance.
+4. **Modeling**: Training machine learning models to predict sales and comparing their performances.
+5. **Evaluation**: Assessing model performance using various evaluation metrics.
+
+## Data
+
+The dataset used in this project contains the following key features:
+
+- `Item_Identifier`: Unique product code.
+- `Item_Weight`: Weight of the product.
+- `Item_Fat_Content`: Indicates whether the product is low-fat or regular.
+- `Item_Visibility`: Percentage visibility of the product in-store.
+- `Item_Type`: Category of the product.
+- `Item_MRP`: Maximum retail price of the product.
+- `Outlet_Identifier`: Unique store code.
+- `Outlet_Establishment_Year`: The year when the store was established.
+- `Outlet_Size`: Size of the store (small, medium, high).
+- `Outlet_Location_Type`: Type of store location (urban, suburban, rural).
+- `Outlet_Type`: Type of store (grocery, supermarket, etc.).
+- `Item_Outlet_Sales`: Sales of the product in the store (target variable).
+
+### Data Preprocessing
+
+Several columns had missing values in the original dataset:
+- **Item_Weight**: Missing values were imputed based on the most frequent values (mode) for each `Item_Identifier`.
+- **Outlet_Size**: Missing values were imputed based on the mode of `Outlet_Size` within each `Outlet_Identifier`.
+
+### Feature Engineering
+
+Features were engineered to enhance model performance:
+- **New Categories**: Grouped similar products under new categories.
+- **Interaction Features**: Created features representing interactions between item visibility and outlet size, item type, and outlet type.
+
+## Exploratory Data Analysis (EDA)
+
+The following visualizations were created to understand the data better:
+- **Histograms** and **Boxplots**: To inspect the distribution and spread of continuous variables.
+- **Countplots**: To examine the frequency of categorical variables.
+- **Heatmaps**: To analyze the correlation between different features and identify potential multicollinearity.
+
+## Machine Learning Models
+
+Several models were trained and evaluated:
+- **Linear Regression**: A baseline model to predict sales based on the features.
+- **Decision Trees**: A model capturing non-linear relationships in the data.
+- **Random Forest**: An ensemble model to improve performance by reducing overfitting.
+- **XGBoost**: A gradient boosting model used to enhance predictive accuracy.
+
+## Evaluation
+
+Model performance was assessed using the following metrics:
+- **Root Mean Squared Error (RMSE)**: To measure the error between predicted and actual sales.
+- **R-squared**: To evaluate the proportion of variance explained by the model.
+
+## Conclusion
+
+This project explored various factors influencing product sales and applied machine learning models to predict future sales. Through rigorous data preprocessing, feature engineering, and model evaluation, the project showcases the end-to-end process of building a predictive model in Python.
+
+## How to Run
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/Areej73/Prediction_of_Product_Sales.git
+    ```
+
+2. Open the Google Colab notebook by following this [link](https://colab.research.google.com).
+
+3. Run the notebook cells step by step to explore the data, train models, and analyze the results.
+
+## Contact
+
+For questions or inquiries, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/areej-taha-373628292) or check out my [GitHub](https://github.com/Areej73).
 
